@@ -1,21 +1,29 @@
-# Write#!/bin/bash
+#!/bin/bash
+
+set -e
 
 echo "Creating project..."
 
-mkdir project
+# go to task-1 directory (where the script is)
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+
+mkdir -p project
 cd project
 
 git init
 
 touch README.md
-mkdir resources
+mkdir -p resources
 touch resources/family\ picture.jpg
 touch resources/icon.png
 touch resources/logo.png
 touch settings.conf
 
-mkdir src
+mkdir -p src
 touch src/program.java
+mkdir -p src/profile
+mkdir -p src/database
 
 git add .
 git commit -m "initial commit"
@@ -26,7 +34,7 @@ echo "Setup project..."
 
 echo "Welcome to my project" > README.md
 
-rm -rf profile
+rm -rf src/profile
 rm resources/family\ picture.jpg
 
 git add .
@@ -47,4 +55,5 @@ git add .
 git commit -m "Setup JavaScript program"
 
 ls ~
-echo "All done!" your code here
+
+echo "All done!"
