@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/bin/bash
 set -e
 
@@ -73,3 +74,5 @@ git commit -m "Setup JavaScript program"
 ls ~
 
 echo "All done!"
+=======
+>>>>>>> 5e71394 (Fix task 1)
