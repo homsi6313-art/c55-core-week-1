@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 #!/bin/bash
 set -e
 
@@ -74,4 +74,4 @@ git commit -m "Setup JavaScript program"
 ls ~
 
 echo "All done!"
-=======
+
