@@ -75,4 +75,3 @@ ls ~
 
 echo "All done!"
 =======
->>>>>>> 5e71394 (Fix task 1)
